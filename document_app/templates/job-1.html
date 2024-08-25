@@ -1,0 +1,887 @@
+{%load static %}
+
+<!doctype html>
+<html class="no-js" lang="">
+
+
+<!-- Mirrored from affixtheme.com/html/xmee/demo/job-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Aug 2024 12:41:26 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>SCHBL</title>
+    <meta id
+    ="description" content="">
+    <meta id
+    ="viewport" content="wnameth=device-wnameth, initial-id=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{%static 'img/favicon.png'%}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="{%static 'css/fontawesome-all.min.css'%}">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="{%static 'font/flaticon.css'%}">
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    {% comment %} <div name="preloader" class="preloader">
+        <div class='inner'>
+            <div class='line1'></div>
+            <div class='line2'></div>
+            <div class='line3'></div>
+        </div>
+    </div> {% endcomment %}
+    <section class="fxt-template-animation fxt-template-layout35">
+        <div class="fxt-content-wrap">
+            <div class="fxt-heading-content">
+                <div class="fxt-inner-wrap">
+                    <div class="fxt-transformX-R-50 fxt-transition-delay-10">
+                        <a href="login-33.html" class="fxt-logo"><img src="{%static 'img/logo-33.png'%}" alt="Logo"></a>
+                    </div>
+                    <div class="fxt-transformX-R-50 fxt-transition-delay-10">
+                        <div class="fxt-mnamedle-content">
+                            <h1 class="fxt-main-title">Hey there! It’s great to have you as part of the team</h1>
+                            <p class="fxt-description">We are glad to see you again! Get access to your Orders, Wishlist Recommendations.Nulla facilisi. Nullam in magna name dolor blandit rutrum eget vulputate augue sed eu leo eget risus dummy text here now ready works imperdiet.</p>
+                        </div>
+                    </div>
+                    <div class="fxt-transformX-R-50 fxt-transition-delay-10">
+                        <div class="d-flex align-items-center flex-wrap justify-content-between">
+                            <ul class="fxt-socials">
+                                <li class="fxt-facebook fxt-transformY-50 fxt-transition-delay-9">
+                                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="fxt-twitter fxt-transformY-50 fxt-transition-delay-10">
+                                    <a href="#" title="twitter"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="fxt-google fxt-transformY-50 fxt-transition-delay-11">
+                                    <a href="#" title="google"><i class="fab fa-google-plus-g"></i></a>
+                                </li>
+                                <li class="fxt-linkedin fxt-transformY-50 fxt-transition-delay-12">
+                                    <a href="#" title="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                                <li class="fxt-pinterest fxt-transformY-50 fxt-transition-delay-13">
+                                    <a href="#" title="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                                </li>
+                            </ul>
+                            <div class="fxt-copyright-text">Copyright © 2023 Xmee. All Rights Reserved</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fxt-form-content">
+                <div class="fxt-main-form">
+                    <div class="fxt-inner-wrap fxt-opacity fxt-transition-delay-13">
+
+                        <div>
+                            <!-- Progressbar -->
+                            <div class="mb-5 d-grname">
+                                <div class="fxt-steps">
+                                    <span class="fxt-current-step"></span> of
+                                    <span class="fxt-total-step"></span> completed
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-solname progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Form -->
+                            <form method="POST" enctype="multipart/form-data">
+                                {% csrf_token %}
+                                {% comment %} #client information {% endcomment %}
+                                <div class="fxt-form-step">
+                                    <h2 class="fxt-page-title">Well Information</h2>
+                                    <div class="form-group">
+                                        <label for="well_id
+                                        ">Well id
+                                            :</label>
+                                        <input type="text" name="well_name" id
+                                        ="well_id
+                                        " class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="client">Client:</label>
+                                        <input type="text" name="client" id
+                                        ="client" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country">Country:</label>
+                                        <input type="text" name="country" id
+                                        ="country" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="geounit">Geounit:</label>
+                                        <input type="text" name="geounit" id
+                                        ="geounit" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="location">Location:</label>
+                                        <input type="text" name="location" id
+                                        ="location" class="form-control" required>
+                                    </div>
+                                
+                                    <div class="form-group">
+                                        <div class="d-flex align-items-center gap-2 mt-5">
+                                            <input type="button" id
+                                            ="next" class="next fxt-btn-fill" value="Next">
+                                        </div>
+                                    </div>
+                                </div>
+                                #job information
+                                {% comment %} <div class="fxt-form-step">
+                                    <h2 class="fxt-page-title">Job Information</h2>
+                                    <div class="form-group">
+                                        <label for="job_number">Job Number:</label>
+                                        <input type="text" name="job_number" id
+                                        ="job_number" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="rig_id
+                                        ">Rig id
+                                            :</label>
+                                        <input type="text" name="rig_id
+                                        " id
+                                        ="rig_id
+                                        " class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="installation_type">Installation Type:</label>
+                                        <input type="text" name="installation_type" id
+                                        ="installation_type" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="start_date">Start Date:</label>
+                                        <input type="date" name="start_date" id
+                                        ="start_date" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="end_date">End Date:</label>
+                                        <input type="date" name="end_date" id
+                                        ="end_date" class="form-control" required>
+                                    </div>
+                                
+                                    <div class="form-group">
+                                        <div class="d-flex align-items-center gap-2 mt-5">
+                                            <input type="button" id
+                                            ="previous" class="previous fxt-btn-fill" value="Previous Step">
+                                            <input type="button" id
+                                            ="next" class="next fxt-btn-fill" value="Next">
+                                        </div>
+                                    </div>
+                                </div> {% endcomment %}
+                                {% comment %} #cleint and job information {% endcomment %}
+                                {% comment %} <div class="fxt-form-step">
+                                    <h2 class="fxt-page-title">Client and JOb Information</h2>
+                                    <div class="form-group">
+                                        <label for="client_representatives">Client Representatives:</label>
+                                        <input type="text" name="client_representatives" id
+                                        ="client_representatives" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="psd_team">PSD Team:</label>
+                                        <input type="text" name="psd_team" id
+                                        ="psd_team" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="job_supervisors">Job Supervisors:</label>
+                                        <input type="text" name="job_supervisors" id
+                                        ="job_supervisors" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="crew_members">Crew Members:</label>
+                                        <input type="text" name="crew_members" id
+                                        ="crew_members" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="d-flex align-items-center gap-2 mt-5">
+                                            <input type="button" id
+                                            ="previous" class="previous fxt-btn-fill" value="Previous Step">
+                                            <input type="button" id
+                                            ="next" class="next fxt-btn-fill" value="Next">
+                                        </div>
+                                    </div>
+                                </div> {% endcomment %}
+
+                                {% comment %} #Document information {% endcomment %}
+                                {% comment %} <div class="fxt-form-step">
+                                    <h2 class="fxt-page-title">Document Information</h2>
+                                        <div class="form-group">
+                                            <label for="issue_date">Issue Date:</label>
+                                            <input type="date" name="issue_date" id
+                                            ="issue_date" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="prepared_by">Prepared By:</label>
+                                            <input type="text" name="prepared_by" id
+                                            ="prepared_by" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="reviewed_by">Reviewed By:</label>
+                                            <input type="text" name="reviewed_by" id
+                                            ="reviewed_by" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="approved_by">Approved By:</label>
+                                            <input type="text" name="approved_by" id
+                                            ="approved_by" class="form-control" required>
+                                        </div>
+                                        <div class="form-group">
+                                        <div class="d-flex align-items-center gap-2 mt-5">
+                                            <input type="button" id
+                                            ="previous" class="previous fxt-btn-fill" value="Previous Step">
+                                            <input type="button" id
+                                            ="next" class="next fxt-btn-fill" value="Next">
+                                        </div>
+                                    </div>
+                                </div> {% endcomment %}
+
+                                {% comment %} #Well information {% endcomment %}
+                                {% comment %} <div class="fxt-form-step">
+                                        <h2 class="fxt-page-title">Well Information</h2>
+                                    <div class="form-group">
+                                        <label for="screen_type">Screen Type:</label>
+                                        <input type="text" name="screen_type" id
+                                        ="screen_type" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="open_hole_size">Open Hole Size:</label>
+                                        <input type="text" name="open_hole_size" id
+                                        ="open_hole_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Screen Size:</label>
+                                        <input type="text" name="screen_size" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="drill_pipe">Drill Pipe:</label>
+                                        <input type="text" name="drill_pipe" id
+                                        ="drill_pipe" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="casing_size">Casing Size:</label>
+                                        <input type="text" name="casing_size" id
+                                        ="casing_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="completion_fluname">Completion Fluname:</label>
+                                        <input type="text" name="completion_fluname" id
+                                        ="completion_fluname" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="well_type">Well Type:</label>
+                                        <input type="text" name="well_type" id
+                                        ="well_type" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="field_id
+                                        ">Field id
+                                            :</label>
+                                        <input type="text" name="field_id
+                                        " id
+                                        ="field_id
+                                        " class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="total_depth">Total Depth:</label>
+                                        <input type="text" name="total_depth" id
+                                        ="total_depth" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="maximum_deviation">Maximum Deviation:</label>
+                                        <input type="text" name="maximum_deviation" id
+                                        ="maximum_deviation" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="max_dls">Max DLS:</label>
+                                        <input type="text" name="max_dls" id
+                                        ="max_dls" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="casing_shoe">Casing Shoe:</label>
+                                        <input type="text" name="casing_shoe" id
+                                        ="casing_shoe" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="casing_shoe">Open Hole Interval:</label>
+                                        <input type="text" name="open_hole_interval" id
+                                        ="casing_shoe" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="casing_shoe">Rotary Table Ground:</label>
+                                        <input type="text" name="rotary_table_ground" id
+                                        ="casing_shoe" class="form-control" required>
+                                    </div>
+                                        <div class="form-group">
+                                            <div class="d-flex align-items-center gap-2 mt-5">
+                                                <input type="button" id
+                                                ="previous" class="previous fxt-btn-fill" value="Previous Step">
+                                                <input type="button" id
+                                                ="next" class="next fxt-btn-fill" value="Next">
+                                            </div>
+                                        </div>
+                                    
+                                </div> {% endcomment %}
+
+                                 {% comment %} #Casing information {% endcomment %}
+                                 {% comment %} <div class="fxt-form-step">
+                                        <h2 class="fxt-page-title">Casing Information</h2>
+                                    <div class="form-group">
+                                        <label for="screen_type">Casing Description:</label>
+                                        <input type="text" name="casing_description" id
+                                        ="screen_type" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="open_hole_size">Casing name:</label>
+                                        <input type="text" name="casing_name" id
+                                        ="open_hole_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Casing Drift:</label>
+                                        <input type="text" name="casing_drift" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="drill_pipe">Casing Length:</label>
+                                        <input type="text" name="casing_length" id
+                                        ="drill_pipe" class="form-control" required>
+                                    </div>
+                               
+                                    
+                                
+                                        <div class="form-group">
+                                            <div class="d-flex align-items-center gap-2 mt-5">
+                                                <input type="button" id
+                                                ="previous" class="previous fxt-btn-fill" value="Previous Step">
+                                                <input type="button" id
+                                                ="next" class="next fxt-btn-fill" value="Next">
+                                            </div>
+                                        </div>
+                                
+                                </div> {% endcomment %}
+
+                                {% comment %} #Reservior information {% endcomment %}
+                                {% comment %} <div class="fxt-form-step">
+                                        <h2 class="fxt-page-title">Reservior Information</h2>
+                                    <div class="form-group">
+                                        <label for="screen_type">Reservior Temperature:</label>
+                                        <input type="text" name="reservoir_temp" id
+                                        ="screen_type" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="open_hole_size">Reservior Pressure:</label>
+                                        <input type="text" name="reservoir_pressure" id
+                                        ="open_hole_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Zones MD:</label>
+                                        <input type="text" name="zones_md" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    
+
+                                        <div class="form-group">
+                                            <div class="d-flex align-items-center gap-2 mt-5">
+                                                <input type="button" id
+                                                ="previous" class="previous fxt-btn-fill" value="Previous Step">
+                                                <input type="button" id
+                                                ="next" class="next fxt-btn-fill" value="Next">
+                                            </div>
+                                        </div>
+                            
+                                </div> {% endcomment %}
+
+                                {% comment %} #Tubing information {% endcomment %}
+                                {% comment %} <div class="fxt-form-step">
+                                        <h2 class="fxt-page-title">Tubing Information</h2>
+                                    <div class="form-group">
+                                        <label for="screen_type">Tubing Description:</label>
+                                        <input type="text" name="tubing_descriptionoir_temp" id
+                                        ="screen_type" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="open_hole_size">Tubing name:</label>
+                                        <input type="text" name="tubing_name" id
+                                        ="open_hole_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Tubing drift:</label>
+                                        <input type="text" name="tubing_drift" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    
+
+                                        <div class="form-group">
+                                            <div class="d-flex align-items-center gap-2 mt-5">
+                                                <input type="button" id
+                                                ="previous" class="previous fxt-btn-fill" value="Previous Step">
+                                                <input type="button" id
+                                                ="next" class="next fxt-btn-fill" value="Next">
+                                            </div>
+                                        </div>
+                            
+                                </div> {% endcomment %}
+
+
+                                
+                                {% comment %} #Quantum information {% endcomment %}
+                                {% comment %} <div class="fxt-form-step">
+                                        <h2 class="fxt-page-title">Quantum Packer</h2>
+                                    <div class="form-group">
+                                        <label for="screen_type">Quantum Description:</label>
+                                        <input type="text" name="quantum_description" id
+                                        ="screen_type" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="open_hole_size">Quantum PN:</label>
+                                        <input type="text" name="quantum_pn" id
+                                        ="open_hole_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Quantum SN:</label>
+                                        <input type="text" name="quantum_sn" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Quantum OD:</label>
+                                        <input type="text" name="quantum_od" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Quantum IN:</label>
+                                        <input type="text" name="quantum_in" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Differential Pressure Rating:</label>
+                                        <input type="text" name="diff_pressure_rating" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Grade:</label>
+                                        <input type="text" name="grade" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Material Element:</label>
+                                        <input type="text" name="material_elements" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Assembly Number:</label>
+                                        <input type="text" name="assembly_no" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    
+
+                                        <div class="form-group">
+                                            <div class="d-flex align-items-center gap-2 mt-5">
+                                                <input type="button" id
+                                                ="previous" class="previous fxt-btn-fill" value="Previous Step">
+                                                <input type="button" id
+                                                ="next" class="next fxt-btn-fill" value="Next">
+                                            </div>
+                                        </div>
+                        
+                                </div> {% endcomment %}
+
+
+                                 {% comment %} #Seal information {% endcomment %}
+                                {% comment %} <div class="fxt-form-step">
+                                        <h2 class="fxt-page-title">Seal Bore Extension</h2>
+                                    <div class="form-group">
+                                        <label for="screen_type">Seal Bore Description:</label>
+                                        <input type="text" name="seal_bore_description" id
+                                        ="screen_type" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="open_hole_size">Seal PN:</label>
+                                        <input type="text" name="seal_pn" id
+                                        ="open_hole_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Seal SN1:</label>
+                                        <input type="text" name="seal_sn1" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Seal SN2:</label>
+                                        <input type="text" name="seal_sn2" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Seal OD:</label>
+                                        <input type="text" name="seal_od" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Seal IN:</label>
+                                        <input type="text" name="seal_in" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Internal Working Pressure:</label>
+                                        <input type="text" name="internal_working_pressure" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                
+                                    <div class="form-group">
+                                        <label for="screen_size"> Seal Assembly Number:</label>
+                                        <input type="text" name="seal_assembly_no" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    
+
+                                        <div class="form-group">
+                                            <div class="d-flex align-items-center gap-2 mt-5">
+                                                <input type="button" id
+                                                ="previous" class="previous fxt-btn-fill" value="Previous Step">
+                                                <input type="button" id
+                                                ="next" class="next fxt-btn-fill" value="Next">
+                                            </div>
+                                        </div>
+                    
+                                </div> {% endcomment %}
+
+                                 {% comment %} #Mechanical  information {% endcomment %}
+                                {% comment %} <div class="fxt-form-step">
+                                        <h2 class="fxt-page-title">Mechanical Formation Isolation Valve</h2>
+                                    <div class="form-group">
+                                        <label for="screen_type">Mechanical Description:</label>
+                                        <input type="text" name="mechanical_description" id
+                                        ="screen_type" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="open_hole_size">Mechanical PN:</label>
+                                        <input type="text" name="mechanical_pn" id
+                                        ="open_hole_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Mechanical  SN:</label>
+                                        <input type="text" name="mechanical_sn" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                
+                                    <div class="form-group">
+                                        <label for="screen_size">Mechanical OD:</label>
+                                        <input type="text" name="mechanical_od" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Mechanical IN:</label>
+                                        <input type="text" name="mechanical_in" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Mechanical Internal Working Pressure:</label>
+                                        <input type="text" name="mechanical_internal_working_pressure" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Mechanical Material Elastomers:</label>
+                                        <input type="text" name="mechanical_material_elastomers" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Shift Force:</label>
+                                        <input type="text" name="shifting_force" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Shifting Profile:</label>
+                                        <input type="text" name="shifting_profile" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                
+                                
+                                    <div class="form-group">
+                                        <label for="screen_size"> Mechanical Assembly Number:</label>
+                                        <input type="text" name="mechanical_assembly_no" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    
+
+                                        <div class="form-group">
+                                            <div class="d-flex align-items-center gap-2 mt-5">
+                                                <input type="button" id
+                                                ="previous" class="previous fxt-btn-fill" value="Previous Step">
+                                                <input type="button" id
+                                                ="next" class="next fxt-btn-fill" value="Next">
+                                            </div>
+                                        </div>
+                    
+                                </div> {% endcomment %}
+
+                                {% comment %} #POLISHED BORE RECEPTACLE  information {% endcomment %}
+                                {% comment %} <div class="fxt-form-step">
+                                        <h2 class="fxt-page-title">POLISHED BORE RECEPTACLE</h2>
+                                    <div class="form-group">
+                                        <label for="screen_type">Polished Description:</label>
+                                        <input type="text" name="polished_description" id
+                                        ="screen_type" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="open_hole_size">Polished PN:</label>
+                                        <input type="text" name="polished_pn" id
+                                        ="open_hole_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Polished  SN:</label>
+                                        <input type="text" name="polished_sn" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                
+                                    <div class="form-group">
+                                        <label for="screen_size">Polished OD:</label>
+                                        <input type="text" name="polished_od" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Polished IN:</label>
+                                        <input type="text" name="polished_in" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Polished Internal Working Pressure:</label>
+                                        <input type="text" name="polished_internal_working_pressure" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Polished Assembly Number:</label>
+                                        <input type="text" name="polished_assembly_no" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    
+                                    
+
+                                        <div class="form-group">
+                                            <div class="d-flex align-items-center gap-2 mt-5">
+                                                <input type="button" id
+                                                ="previous" class="previous fxt-btn-fill" value="Previous Step">
+                                                <input type="button" id
+                                                ="next" class="next fxt-btn-fill" value="Next">
+                                            </div>
+                                        </div>
+                    
+                                </div> {% endcomment %}
+
+                                {% comment %} #WASH DOWN SHOE  information {% endcomment %}
+                                {% comment %} <div class="fxt-form-step">
+                                        <h2 class="fxt-page-title">WASH DOWN SHOE</h2>
+                                    <div class="form-group">
+                                        <label for="screen_type">Washed Down Description:</label>
+                                        <input type="text" name="washed_down_description" id
+                                        ="screen_type" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="open_hole_size">Washed Down PN:</label>
+                                        <input type="text" name="washed_down_pn" id
+                                        ="open_hole_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Washed Down SN:</label>
+                                        <input type="text" name="washed_down_sn" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                
+                                    <div class="form-group">
+                                        <label for="screen_size">Washed Down OD:</label>
+                                        <input type="text" name="washed_down_od" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Washed Down IN:</label>
+                                        <input type="text" name="washed_down_in" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Valve Type:</label>
+                                        <input type="text" name="valve_type" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_size">Washed Assembly Number:</label>
+                                        <input type="text" name="washed_assembly_no" id
+                                        ="screen_size" class="form-control" required>
+                                    </div>
+                                    
+                                    
+
+                                        <div class="form-group">
+                                            <div class="d-flex align-items-center gap-2 mt-5">
+                                                <input type="button" id
+                                                ="previous" class="previous fxt-btn-fill" value="Previous Step">
+                                                <input type="button" id
+                                                ="next" class="next fxt-btn-fill" value="Next">
+                                            </div>
+                                        </div>
+                
+                                </div> {% endcomment %}
+
+                                {% comment %} #RIH   information {% endcomment %}
+                                {% comment %} <div class="fxt-form-step">
+                                        <h2 class="fxt-page-title">RIH Infromation</h2>
+                                    <div class="form-group">
+                                        <label for="screen_type">Drilling Fluid:</label>
+                                        <input type="text" name="drilling_fluid" id
+                                        ="screen_type" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="open_hole_size">Completion Fluid:</label>
+                                        <input type="text" name="completion_fluid" id
+                                        ="open_hole_size" class="form-control" required>
+                                    </div>
+                                    
+
+                                        <div class="form-group">
+                                            <div class="d-flex align-items-center gap-2 mt-5">
+                                                <input type="button" id
+                                                ="previous" class="previous fxt-btn-fill" value="Previous Step">
+                                                <input type="button" id
+                                                ="next" class="next fxt-btn-fill" value="Next">
+                                            </div>
+                                        </div>
+                
+                                </div> {% endcomment %}
+
+                                {% comment %} #QHSE   information {% endcomment %}
+                                {% comment %} <div class="fxt-form-step">
+                                        <h2 class="fxt-page-title">QHSE</h2>
+                                    <div class="form-group">
+                                        <label for="screen_type">QHSE 1:</label>
+                                        <input type="text" name="qhse_question1" id
+                                        ="screen_type" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="open_hole_size">QHSE Description:</label>
+                                        <input type="text" name="qhse_brief_description1" id
+                                        ="open_hole_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="open_hole_size">QHSE Date:</label>
+                                        <input type="text" name="qhse_date1" id
+                                        ="open_hole_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_type">QHSE 2:</label>
+                                        <input type="text" name="qhse_question2" id
+                                        ="screen_type" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="open_hole_size">QHSE Description 2:</label>
+                                        <input type="text" name="qhse_brief_description2" id
+                                        ="open_hole_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="open_hole_size">QHSE Date 2:</label>
+                                        <input type="text" name="qhse_date2" id
+                                        ="open_hole_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="screen_type">QHSE 3:</label>
+                                        <input type="text" name="qhse_question3" id
+                                        ="screen_type" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="open_hole_size">QHSE Description 3:</label>
+                                        <input type="text" name="qhse_brief_description3" id
+                                        ="open_hole_size" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="open_hole_size">QHSE Date 3:</label>
+                                        <input type="text" name="qhse_date3" id
+                                        ="open_hole_size" class="form-control" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="d-flex align-items-center gap-2 mt-5">
+                                            <input type="button" id
+                                            ="previous" class="previous fxt-btn-fill" value="Previous Step">
+                                            <input type="button" id
+                                            ="next" class="next fxt-btn-fill" value="Next">
+                                        </div>
+                                    </div>
+                                    
+
+                                        
+                
+                                </div> {% endcomment %}
+
+                                {% comment %} #file uploads {% endcomment %}
+                                <div class="fxt-form-step">
+                                        <h2 class="fxt-page-title">file uploads</h2>
+                                    <div class="form-group">
+                                        <label for="screen_type">first pdf:</label>
+                                        <input type="file" class="form-control" name = "pdf1_images">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="d-flex align-items-center gap-2 mt-5">
+                                            <input type="button" id
+                                            ="previous" class="previous fxt-btn-fill" value="Previous Step">
+                                            <input type="submit" name="next" class="fxt-btn-fill" value="Submit">
+                                        
+                                        </div>
+                                    </div>
+                                
+
+                                    
+            
+                            </div>
+  
+                                
+                            
+                                {% comment %} <div class="fxt-form-step">
+                                    <h2 class="fxt-page-title">Cover Letter And Resume</h2>
+                                    <div class="form-group">
+                                        <textarea class="form-control" id
+                                        ="cover-etter" name="cover-etter" cols="40" rows="6" placeholder="Cover letter"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="file" class="form-control">
+                                        <!-- <label class="custom-file-label" for="valnameatedCustomFile"><span class="file-return">No file choosen</span></label> -->
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <input name="checkbox1" type="checkbox">
+                                            <label for="checkbox1">I Accept The <a href="#">Term Of Conditions</a> And <a href="#">Privacy Policy</a></label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <input type="button" id
+                                            ="previous" class="previous fxt-btn-fill" value="Previous Step">
+                                            <input type="submit" id
+                                            ="next" class="fxt-btn-fill" value="Submit">
+                                        </div>
+                                    </div>
+                                </div> {% endcomment %}
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- jquery-->
+    <script src="{%static 'js/jquery.min.js'%}"></script>
+    <!-- Bootstrap js -->
+    <script src="{%static 'js/bootstrap.min.js'%}"></script>
+    <!-- Imagesloaded js -->
+    <script src="{%static 'js/imagesloaded.pkgd.min.js'%}"></script>
+    <!-- Valnameator js -->
+    <script src="{%static 'js/valnameator.min.js'%}"></script>
+    <!-- Custom Js -->
+    <script src="{%static 'js/main.js'%}"></script>
+
+</body>
+
+
+<!-- Mirrored from affixtheme.com/html/xmee/demo/job-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Aug 2024 12:41:37 GMT -->
+</html>
