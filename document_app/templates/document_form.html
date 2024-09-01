@@ -7,10 +7,10 @@
 </head>
 <body>
     <h1>Fill Out the Document Form</h1>
-    <form method="post" enctype="multipart/form-data">
+    <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Submit</button>
+        <input type="file" name="excel_file" accept=".xlsx">
+        <button type="submit">Convert to Word</button>
     </form>
     
 </body>

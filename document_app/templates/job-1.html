@@ -95,7 +95,7 @@
                             <form method="POST" enctype="multipart/form-data">
                                 {% csrf_token %}
                                 {% comment %} #client information {% endcomment %}
-                                <div class="fxt-form-step">
+                                {% comment %} <div class="fxt-form-step">
                                     <h2 class="fxt-page-title">Well Information</h2>
                                     <div class="form-group">
                                         <label for="well_id
@@ -132,7 +132,7 @@
                                             ="next" class="next fxt-btn-fill" value="Next">
                                         </div>
                                     </div>
-                                </div>
+                                </div> {% endcomment %}
                                 #job information
                                 {% comment %} <div class="fxt-form-step">
                                     <h2 class="fxt-page-title">Job Information</h2>
@@ -174,9 +174,9 @@
                                             ="next" class="next fxt-btn-fill" value="Next">
                                         </div>
                                     </div>
-                                </div> {% endcomment %}
+                                </div>  {% endcomment %}
                                 {% comment %} #cleint and job information {% endcomment %}
-                                {% comment %} <div class="fxt-form-step">
+                                 {% comment %} <div class="fxt-form-step">
                                     <h2 class="fxt-page-title">Client and JOb Information</h2>
                                     <div class="form-group">
                                         <label for="client_representatives">Client Representatives:</label>
@@ -206,7 +206,7 @@
                                             ="next" class="next fxt-btn-fill" value="Next">
                                         </div>
                                     </div>
-                                </div> {% endcomment %}
+                                </div>  {% endcomment %}
 
                                 {% comment %} #Document information {% endcomment %}
                                 {% comment %} <div class="fxt-form-step">
@@ -239,10 +239,10 @@
                                             ="next" class="next fxt-btn-fill" value="Next">
                                         </div>
                                     </div>
-                                </div> {% endcomment %}
+                                </div>  {% endcomment %}
 
                                 {% comment %} #Well information {% endcomment %}
-                                {% comment %} <div class="fxt-form-step">
+                                 {% comment %} <div class="fxt-form-step">
                                         <h2 class="fxt-page-title">Well Information</h2>
                                     <div class="form-group">
                                         <label for="screen_type">Screen Type:</label>
@@ -327,10 +327,10 @@
                                             </div>
                                         </div>
                                     
-                                </div> {% endcomment %}
+                                </div>  {% endcomment %}
 
                                  {% comment %} #Casing information {% endcomment %}
-                                 {% comment %} <div class="fxt-form-step">
+                                  {% comment %} <div class="fxt-form-step">
                                         <h2 class="fxt-page-title">Casing Information</h2>
                                     <div class="form-group">
                                         <label for="screen_type">Casing Description:</label>
@@ -364,7 +364,7 @@
                                             </div>
                                         </div>
                                 
-                                </div> {% endcomment %}
+                                </div>  {% endcomment %}
 
                                 {% comment %} #Reservior information {% endcomment %}
                                 {% comment %} <div class="fxt-form-step">
@@ -816,10 +816,94 @@
                                 {% comment %} #file uploads {% endcomment %}
                                 <div class="fxt-form-step">
                                         <h2 class="fxt-page-title">file uploads</h2>
-                                    <div class="form-group">
-                                        <label for="screen_type">first pdf:</label>
-                                        <input type="file" class="form-control" name = "pdf1_images">
+                                     <div class="form-group">
+                                        <label for="screen_type">Well Trajectory pdf:</label>
+                                        <input type="file" class="form-control" name = "well_trajectory">
+                                    </div> 
+
+                                    
+
+                                     <div class="form-group">
+                                        <label for="screen_type">Data pdf:</label>
+                                        <input type="file" class="form-control" name = "data">
                                     </div>
+
+                                    <div class="form-group">
+                                        <label for="screen_type">FINAL COMPLETION SCHEMATIC pdf:</label>
+                                        <input type="file" class="form-control" name = "schematic">
+                                    </div> 
+
+                                     <div class="form-group">
+                                        <label for="screen_type">MATERIAL CONSUMPTION - LOWER COMPLETION pdf:</label>
+                                        <input type="file" class="form-control" name = "material_consumption">
+                                    </div> 
+
+                                     <div class="form-group">
+                                        <label for="screen_type">JOB CALCULATION - TDAS TORQUE AND DRAG pdf:</label>
+                                        <input type="file" class="form-control" name = "tdas">
+                                    </div> 
+
+                                    <div class="form-group">
+                                        <label for="screen_type">SEQUENCE OF EVENTS (DSR) pdf:</label>
+                                        <input type="file" class="form-control" name = "dsr">
+                                    </div> 
+
+                                     <div class="form-group">
+                                        <label for="screen_type">Quantum Packer Assembly LC-OP-STP-28  pdf:</label>
+                                        <input type="file" class="form-control" name = "quantum_packer">
+                                    </div> 
+
+                                     <div class="form-group">
+                                        <label for="screen_type">MFIV Assembly LC2-OP-MFIV-32   pdf:</label>
+                                        <input type="file" class="form-control" name = "mfiv_assembly">
+                                    </div> 
+
+                                     <div class="form-group">
+                                        <label for="screen_type">Washdown Assembly LC-OP-WDS-27 pdf:</label>
+                                        <input type="file" class="form-control" name = "washdown">
+                                    </div> 
+
+                                     <div class="form-group">
+                                        <label for="screen_type">CLIENT SERVICE QUALITY EVALUATION pdf:</label>
+                                        <input type="file" class="form-control" name = "csr">
+                                    </div> 
+
+                                    <div class="form-group">
+                                        <label for="screen_type">Tallies pdf:</label>
+                                        <input type="file" class="form-control" name = "tallies">
+                                    </div> 
+
+                                    <div class="form-group">
+                                        <label for="screen_type">Line test Image:</label>
+                                        <input type="file" class="form-control" name = "line_test">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="screen_type">Packer Setting Image:</label>
+                                        <input type="file" class="form-control" name = "packer_setting">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="screen_type">Annulus Test Image:</label>
+                                        <input type="file" class="form-control" name = "annulus_test">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="screen_type">Release Service Image:</label>
+                                        <input type="file" class="form-control" name = "release_service">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="screen_type">Expand Ballseat Image:</label>
+                                        <input type="file" class="form-control" name = "expand_ballseat">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="screen_type">MFIV Image:</label>
+                                        <input type="file" class="form-control" name = "mfiv">
+                                    </div>
+
+                                    
 
                                     <div class="form-group">
                                         <div class="d-flex align-items-center gap-2 mt-5">
