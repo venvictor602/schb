@@ -1,89 +1,5 @@
-
-
-# import os
-# import io
-# from django.conf import settings
-# from django.shortcuts import render
-# from django.http import HttpResponse
-# from .forms import DocumentForm
-# from .models import DocumentData
-# from PIL import Image
-# import fitz  # PyMuPDF
-# from docx import Document
-# from docx.shared import Inches
-# from datetime import date
-
-# def pdf_to_images(pdf_file):
-#     images = []
-#     pdf_document = fitz.open(stream=pdf_file.read(), filetype="pdf")
-#     for page_number in range(len(pdf_document)):
-#         page = pdf_document.load_page(page_number)
-#         pix = page.get_pixmap()
-#         img = Image.open(io.BytesIO(pix.tobytes("png")))  # Ensure correct format
-#         images.append(img)
-#     return images
-
-# def generate_document(data, images):
-#     template_path = os.path.join(settings.BASE_DIR, 'document_app', 'templates', 'document_app', 'templates.docx')
-#     document = Document(template_path)
-
-#     # Convert all datetime.date fields to strings
-#     for key, value in data.items():
-#         if isinstance(value, date):
-#             data[key] = value.strftime('%d-%m-%Y')  # Adjust the format as needed
-
-#     # Replace placeholders in the document with form data
-#     for paragraph in document.paragraphs:
-#         for key, value in data.items():
-#             placeholder = '{{' + key + '}}'
-#             if placeholder in paragraph.text:
-#                 paragraph.text = paragraph.text.replace(placeholder, value)
-
-#     # Replace placeholders in tables (if any)
-#     for table in document.tables:
-#         for row in table.rows:
-#             for cell in row.cells:
-#                 for key, value in data.items():
-#                     placeholder = '{{' + key + '}}'
-#                     if placeholder in cell.text:
-#                         cell.text = cell.text.replace(placeholder, value)
-
-#     # Insert images into the document
-#     for image in images:
-#         # Save image to a BytesIO object
-#         image_stream = io.BytesIO()
-#         image.save(image_stream, format='PNG')  # Ensure format is specified
-#         image_stream.seek(0)
-        
-#         # Add image to the document
-#         document.add_paragraph()  # Add an empty paragraph before inserting the image
-#         document.add_picture(image_stream, width=Inches(6))  # Adjust size as needed
-
-#     # Save the modified document to a BytesIO object
-#     output = io.BytesIO()
-#     document.save(output)
-#     output.seek(0)
-    
-#     return output
-
-# def document_view(request):
-#     if request.method == 'POST':
-#         form = DocumentForm(request.POST, request.FILES)
-#         if form.is_valid():
-#             pdf_file = request.FILES.get('pdf_file')
-#             if pdf_file:
-#                 images = pdf_to_images(pdf_file)
-#                 doc_file = generate_document(form.cleaned_data, images)
-#                 response = HttpResponse(doc_file, content_type='application/vnd.openxmlformats-officedocument.wordprocessingml.document')
-#                 response['Content-Disposition'] = f'attachment; filename="{form.cleaned_data["well_name"]}_report.docx"'
-#                 return response
-#             else:
-#                 return HttpResponse("PDF file is required.", status=400)
-#     else:
-#         form = DocumentForm()
-
-#     return render(request, 'document_form.html', {'form': form})
-
+def index(request):
+    return render(request, 'index.html')
 
 
 import os
@@ -265,3 +181,22 @@ def document_view(request):
     return render(request, 'job-1.html')
 
 
+
+def upper_oil(request):
+    return render(request, 'index.html')
+
+def both_oil(request):
+    return render(request, 'index.html')
+
+
+def upper_lower_fibre(request):
+    return render(request, 'index.html')
+
+def lower_suspension_fibre(request):
+    return render(request, 'index.html')
+
+def water_injector_1(request):
+    return render(request, 'index.html')
+
+def water_injector_2(request):
+    return render(request, 'index.html')
