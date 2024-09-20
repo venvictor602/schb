@@ -8,52 +8,52 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>SCHBL</title>
+    <title>Lower Completion</title>
     <meta id
     ="description" content="">
     <meta id
     ="viewport" content="wnameth=device-wnameth, initial-id=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{%static 'img/favicon.png'%}">
+    <link rel="shortcut icon" type="image/x-icon" href="{%static 'job/img/favicon.png'%}">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{%static 'job/css/bootstrap.min.css'%}">
     <!-- Fontawesome CSS -->
-    <link rel="stylesheet" href="{%static 'css/fontawesome-all.min.css'%}">
+    <link rel="stylesheet" href="{%static 'job/css/fontawesome-all.min.css'%}">
     <!-- Flaticon CSS -->
-    <link rel="stylesheet" href="{%static 'font/flaticon.css'%}">
+    <link rel="stylesheet" href="{%static 'job/font/flaticon.css'%}">
     <!-- Google Web Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{%static 'style.css'%}">
+    <link rel="stylesheet" href="{%static 'job/style.css'%}">
 </head>
 
 <body>
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    {% comment %} <div name="preloader" class="preloader">
+     {% comment %} <div name="preloader" class="preloader">
         <div class='inner'>
             <div class='line1'></div>
             <div class='line2'></div>
             <div class='line3'></div>
         </div>
-    </div> {% endcomment %}
+    </div>  {% endcomment %}
     <section class="fxt-template-animation fxt-template-layout35">
         <div class="fxt-content-wrap">
             <div class="fxt-heading-content">
-                <div class="fxt-inner-wrap">
+                {% comment %} <div class="fxt-inner-wrap">
                     <div class="fxt-transformX-R-50 fxt-transition-delay-10">
-                        {% comment %} <a href="login-33.html" class="fxt-logo"><img src="{%static 'img/logo-33.png'%}" alt="Logo"></a> {% endcomment %}
+                         <a href="login-33.html" class="fxt-logo"><img src="{%static 'img/logo-33.png'%}" alt="Logo"></a> 
                     </div>
-                    {% comment %} <div class="fxt-transformX-R-50 fxt-transition-delay-10">
+                     <div class="fxt-transformX-R-50 fxt-transition-delay-10">
                         <div class="fxt-mnamedle-content">
                             <h1 class="fxt-main-title">Hey there! It’s great to have you as part of the team</h1>
                             <p class="fxt-description">We are glad to see you again! Get access to your Orders, Wishlist Recommendations.Nulla facilisi. Nullam in magna name dolor blandit rutrum eget vulputate augue sed eu leo eget risus dummy text here now ready works imperdiet.</p>
                         </div>
-                    </div> {% endcomment %}
+                    </div> 
                     <div class="fxt-transformX-R-50 fxt-transition-delay-10">
                         <div class="d-flex align-items-center flex-wrap justify-content-between">
-                            {% comment %} <ul class="fxt-socials">
+                             <ul class="fxt-socials">
                                 <li class="fxt-facebook fxt-transformY-50 fxt-transition-delay-9">
                                     <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
                                 </li>
@@ -69,11 +69,11 @@
                                 <li class="fxt-pinterest fxt-transformY-50 fxt-transition-delay-13">
                                     <a href="#" title="pinterest"><i class="fab fa-pinterest-p"></i></a>
                                 </li>
-                            </ul> {% endcomment %}
-                            {% comment %} <div class="fxt-copyright-text">Copyright © 2023 Xmee. All Rights Reserved</div> {% endcomment %}
+                            </ul> 
+                             <div class="fxt-copyright-text">Copyright © 2023 Xmee. All Rights Reserved</div> 
                         </div>
                     </div>
-                </div>
+                </div> {% endcomment %}
             </div>
             <div class="fxt-form-content">
                 <div class="fxt-main-form">
@@ -94,8 +94,8 @@
                             <!-- Form -->
                             <form method="POST" enctype="multipart/form-data">
                                 {% csrf_token %}
-                                {% comment %} #client information {% endcomment %}
-                                {% comment %} <div class="fxt-form-step">
+                                 {% comment %} #client information  {% endcomment %}
+                                <div class="fxt-form-step">
                                     <h2 class="fxt-page-title">Well Information</h2>
                                     <div class="form-group">
                                         <label for="well_id
@@ -132,9 +132,9 @@
                                             ="next" class="next fxt-btn-fill" value="Next">
                                         </div>
                                     </div>
-                                </div> {% endcomment %}
-                                #job information
-                                {% comment %} <div class="fxt-form-step">
+                                </div> 
+                                
+                                 <div class="fxt-form-step">
                                     <h2 class="fxt-page-title">Job Information</h2>
                                     <div class="form-group">
                                         <label for="job_number">Job Number:</label>
@@ -174,9 +174,9 @@
                                             ="next" class="next fxt-btn-fill" value="Next">
                                         </div>
                                     </div>
-                                </div>  {% endcomment %}
-                                {% comment %} #cleint and job information {% endcomment %}
-                                 {% comment %} <div class="fxt-form-step">
+                                </div>  
+                                 {% comment %} #cleint and job information  {% endcomment %}
+                                  <div class="fxt-form-step">
                                     <h2 class="fxt-page-title">Client and JOb Information</h2>
                                     <div class="form-group">
                                         <label for="client_representatives">Client Representatives:</label>
@@ -194,6 +194,11 @@
                                         ="job_supervisors" class="form-control" required>
                                     </div>
                                     <div class="form-group">
+                                        <label for="psd_team">PSD Team:</label>
+                                        <input type="text" name="job_coordinator" id
+                                        ="psd_team" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
                                         <label for="crew_members">Crew Members:</label>
                                         <input type="text" name="crew_members" id
                                         ="crew_members" class="form-control" required>
@@ -206,10 +211,10 @@
                                             ="next" class="next fxt-btn-fill" value="Next">
                                         </div>
                                     </div>
-                                </div>  {% endcomment %}
+                                </div>  
 
-                                {% comment %} #Document information {% endcomment %}
-                                {% comment %} <div class="fxt-form-step">
+                                 {% comment %} #Document information  {% endcomment %}
+                                 <div class="fxt-form-step">
                                     <h2 class="fxt-page-title">Document Information</h2>
                                         <div class="form-group">
                                             <label for="issue_date">Issue Date:</label>
@@ -239,10 +244,10 @@
                                             ="next" class="next fxt-btn-fill" value="Next">
                                         </div>
                                     </div>
-                                </div>  {% endcomment %}
+                                </div>  
 
-                                {% comment %} #Well information {% endcomment %}
-                                 {% comment %} <div class="fxt-form-step">
+                                 {% comment %} #Well information  {% endcomment %}
+                                  <div class="fxt-form-step">
                                         <h2 class="fxt-page-title">Well Information</h2>
                                     <div class="form-group">
                                         <label for="screen_type">Screen Type:</label>
@@ -327,10 +332,10 @@
                                             </div>
                                         </div>
                                     
-                                </div>  {% endcomment %}
+                                </div>  
 
-                                 {% comment %} #Casing information {% endcomment %}
-                                  {% comment %} <div class="fxt-form-step">
+                                  {% comment %} #Casing information  {% endcomment %}
+                                   <div class="fxt-form-step">
                                         <h2 class="fxt-page-title">Casing Information</h2>
                                     <div class="form-group">
                                         <label for="screen_type">Casing Description:</label>
@@ -364,10 +369,10 @@
                                             </div>
                                         </div>
                                 
-                                </div>  {% endcomment %}
+                                </div>  
 
-                                {% comment %} #Reservior information {% endcomment %}
-                                {% comment %} <div class="fxt-form-step">
+                                 {% comment %} #Reservior information  {% endcomment %}
+                                 <div class="fxt-form-step">
                                         <h2 class="fxt-page-title">Reservior Information</h2>
                                     <div class="form-group">
                                         <label for="screen_type">Reservior Temperature:</label>
@@ -395,10 +400,10 @@
                                             </div>
                                         </div>
                             
-                                </div> {% endcomment %}
+                                </div> 
 
-                                {% comment %} #Tubing information {% endcomment %}
-                                {% comment %} <div class="fxt-form-step">
+                                 {% comment %} #Tubing information  {% endcomment %}
+                                 <div class="fxt-form-step">
                                         <h2 class="fxt-page-title">Tubing Information</h2>
                                     <div class="form-group">
                                         <label for="screen_type">Tubing Description:</label>
@@ -426,12 +431,12 @@
                                             </div>
                                         </div>
                             
-                                </div> {% endcomment %}
+                                </div> 
 
 
                                 
-                                {% comment %} #Quantum information {% endcomment %}
-                                {% comment %} <div class="fxt-form-step">
+                                 {% comment %} #Quantum information  {% endcomment %}
+                                 <div class="fxt-form-step">
                                         <h2 class="fxt-page-title">Quantum Packer</h2>
                                     <div class="form-group">
                                         <label for="screen_type">Quantum Description:</label>
@@ -489,11 +494,11 @@
                                             </div>
                                         </div>
                         
-                                </div> {% endcomment %}
+                                </div> 
 
 
-                                 {% comment %} #Seal information {% endcomment %}
-                                {% comment %} <div class="fxt-form-step">
+                                  {% comment %} #Seal information  {% endcomment %}
+                                 <div class="fxt-form-step">
                                         <h2 class="fxt-page-title">Seal Bore Extension</h2>
                                     <div class="form-group">
                                         <label for="screen_type">Seal Bore Description:</label>
@@ -547,10 +552,10 @@
                                             </div>
                                         </div>
                     
-                                </div> {% endcomment %}
+                                </div> 
 
-                                 {% comment %} #Mechanical  information {% endcomment %}
-                                {% comment %} <div class="fxt-form-step">
+                                  {% comment %} #Mechanical  information  {% endcomment %}
+                                 <div class="fxt-form-step">
                                         <h2 class="fxt-page-title">Mechanical Formation Isolation Valve</h2>
                                     <div class="form-group">
                                         <label for="screen_type">Mechanical Description:</label>
@@ -616,10 +621,10 @@
                                             </div>
                                         </div>
                     
-                                </div> {% endcomment %}
+                                </div> 
 
-                                {% comment %} #POLISHED BORE RECEPTACLE  information {% endcomment %}
-                                {% comment %} <div class="fxt-form-step">
+                                 {% comment %} #POLISHED BORE RECEPTACLE  information  {% endcomment %}
+                                 <div class="fxt-form-step">
                                         <h2 class="fxt-page-title">POLISHED BORE RECEPTACLE</h2>
                                     <div class="form-group">
                                         <label for="screen_type">Polished Description:</label>
@@ -669,10 +674,10 @@
                                             </div>
                                         </div>
                     
-                                </div> {% endcomment %}
+                                </div> 
 
-                                {% comment %} #WASH DOWN SHOE  information {% endcomment %}
-                                {% comment %} <div class="fxt-form-step">
+                                 {% comment %} #WASH DOWN SHOE  information  {% endcomment %}
+                                 <div class="fxt-form-step">
                                         <h2 class="fxt-page-title">WASH DOWN SHOE</h2>
                                     <div class="form-group">
                                         <label for="screen_type">Washed Down Description:</label>
@@ -722,10 +727,10 @@
                                             </div>
                                         </div>
                 
-                                </div> {% endcomment %}
+                                </div> 
 
-                                {% comment %} #RIH   information {% endcomment %}
-                                {% comment %} <div class="fxt-form-step">
+                                 {% comment %} #RIH   information  {% endcomment %}
+                                 <div class="fxt-form-step">
                                         <h2 class="fxt-page-title">RIH Infromation</h2>
                                     <div class="form-group">
                                         <label for="screen_type">Drilling Fluid:</label>
@@ -748,10 +753,10 @@
                                             </div>
                                         </div>
                 
-                                </div> {% endcomment %}
+                                </div> 
 
-                                {% comment %} #QHSE   information {% endcomment %}
-                                {% comment %} <div class="fxt-form-step">
+                                 {% comment %} #QHSE   information  {% endcomment %}
+                                 <div class="fxt-form-step">
                                         <h2 class="fxt-page-title">QHSE</h2>
                                     <div class="form-group">
                                         <label for="screen_type">QHSE 1:</label>
@@ -811,10 +816,10 @@
 
                                         
                 
-                                </div> {% endcomment %}
+                                </div> 
 
-                                {% comment %} #file uploads {% endcomment %}
-                                <div class="fxt-form-step">
+                                 {% comment %} #file uploads  {% endcomment %}
+                                 <div class="fxt-form-step">
                                         <h2 class="fxt-page-title">file uploads</h2>
                                      <div class="form-group">
                                         <label for="screen_type">Well Trajectory pdf:</label>
@@ -901,7 +906,7 @@
                                     <div class="form-group">
                                         <label for="screen_type">MFIV Image:</label>
                                         <input type="file" class="form-control" name = "mfiv">
-                                    </div>
+                                    </div> 
 
                                     
 
@@ -921,31 +926,7 @@
   
                                 
                             
-                                {% comment %} <div class="fxt-form-step">
-                                    <h2 class="fxt-page-title">Cover Letter And Resume</h2>
-                                    <div class="form-group">
-                                        <textarea class="form-control" id
-                                        ="cover-etter" name="cover-etter" cols="40" rows="6" placeholder="Cover letter"></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="file" class="form-control">
-                                        <!-- <label class="custom-file-label" for="valnameatedCustomFile"><span class="file-return">No file choosen</span></label> -->
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="checkbox">
-                                            <input name="checkbox1" type="checkbox">
-                                            <label for="checkbox1">I Accept The <a href="#">Term Of Conditions</a> And <a href="#">Privacy Policy</a></label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <input type="button" id
-                                            ="previous" class="previous fxt-btn-fill" value="Previous Step">
-                                            <input type="submit" id
-                                            ="next" class="fxt-btn-fill" value="Submit">
-                                        </div>
-                                    </div>
-                                </div> {% endcomment %}
+                                
                             </form>
                         </div>
                     </div>
@@ -954,15 +935,15 @@
         </div>
     </section>
     <!-- jquery-->
-    <script src="{%static 'js/jquery.min.js'%}"></script>
+    <script src="{%static 'job/js/jquery.min.js'%}"></script>
     <!-- Bootstrap js -->
-    <script src="{%static 'js/bootstrap.min.js'%}"></script>
+    <script src="{%static 'job/js/bootstrap.min.js'%}"></script>
     <!-- Imagesloaded js -->
-    <script src="{%static 'js/imagesloaded.pkgd.min.js'%}"></script>
+    <script src="{%static 'job/js/imagesloaded.pkgd.min.js'%}"></script>
     <!-- Valnameator js -->
-    <script src="{%static 'js/valnameator.min.js'%}"></script>
+    <script src="{%static 'job/js/valnameator.min.js'%}"></script>
     <!-- Custom Js -->
-    <script src="{%static 'js/main.js'%}"></script>
+    <script src="{%static 'job/js/main.js'%}"></script>
 
 </body>
 
